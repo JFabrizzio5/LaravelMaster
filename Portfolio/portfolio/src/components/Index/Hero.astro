@@ -1,0 +1,71 @@
+<section
+    class="py-5 text-light"
+    style="background: linear-gradient(to right, #400000, #700000, #400000);"
+>
+    <div class="container overflow-hidden">
+        <div
+            class="row gy-5 gy-lg-0 align-items-lg-center justify-content-lg-between"
+        >
+            <!-- Texto -->
+            <div class="col-12 col-lg-6">
+                <h2 class="display-3 fw-bold text-warning">Joseph Fabrizzio</h2>
+                <p class="fs-4">
+                    Tu desarrollador web fullstack, creando experiencias 🔥
+                </p>
+                <div class="d-grid gap-2 d-sm-flex">
+                    <button
+                        type="button"
+                        class="btn btn-warning rounded-pill fw-bold px-4 py-2"
+                        >Explorar</button
+                    >
+                    <button
+                        type="button"
+                        class="btn btn-outline-warning rounded-pill fw-bold px-4 py-2"
+                        >Ver más</button
+                    >
+                </div>
+            </div>
+
+            <!-- Imagen con efecto fuego -->
+            <div class="col-12 col-lg-5 text-center">
+                <div class="position-relative d-inline-block fire-container">
+                    <img
+                        class="img-fluid fire-image"
+                        width="300"
+                        height="300"
+                        src="https://avatars.githubusercontent.com/u/115313375?v=4"
+                        alt="Joseph Fabrizzio"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Efecto fuego con clip-path */
+    .fire-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    .fire-image {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+
+        animation: fireEffect 1.5s infinite alternate;
+    }
+
+    @keyframes fireEffect {
+        0% {
+            filter: drop-shadow(0 0 10px rgba(255, 69, 0, 0.8))
+                drop-shadow(0 0 20px rgba(255, 140, 0, 0.7));
+        }
+        100% {
+            filter: drop-shadow(0 0 20px rgba(255, 69, 0, 1))
+                drop-shadow(0 0 40px rgba(255, 140, 0, 1));
+        }
+    }
+</style>
